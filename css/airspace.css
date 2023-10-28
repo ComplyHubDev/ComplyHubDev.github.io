@@ -46,7 +46,7 @@ a,
 a:active,
 a:focus,
 a:active {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .section-title {
   margin-bottom: 70px;
@@ -77,6 +77,9 @@ header .navbar-default {
 }
 header .navbar-default .navbar-nav {
   padding-top: 10px;
+}
+header .navbar-default .navbar-right {
+  padding-top: 30px;
 }
 header .navbar-default .navbar-nav li a {
   color: #333333;
@@ -360,7 +363,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	content Start
 --*/
 #testimonial {
-  padding: 100px 0;
+  padding: 100px 0px;
 }
 #testimonial .block h2 {
   line-height: 27px;
@@ -368,8 +371,8 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 110px;
 }
 #testimonial .block p {
-  padding-top: 50px;
-  color: #7B7B7B;
+  /* padding-top: 50px; */
+  /* color: #7B7B7B; */
 }
 #testimonial .counter-box li {
   width: 50%;
@@ -390,7 +393,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #testimonial .testimonial-carousel {
   text-align: center;
   width: 75%;
-  border: 1px solid #DEDEDE;
+  border: 2px solid #DEDEDE;
+  border-radius: 10px;
   padding: 24px;
   margin: 0 auto;
 }
@@ -398,8 +402,8 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 38px;
 }
 #testimonial .testimonial-carousel p {
-  line-height: 28px;
-  font-weight: 300;
+  /* line-height: 28px; */
+  /*font-weight: 300; */
   padding-bottom: 20px;
 }
 #testimonial .testimonial-carousel .user img {
@@ -408,10 +412,18 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #testimonial .testimonial-carousel .user p {
   padding-bottom: 0;
-  font-size: 12px;
-  line-height: 20px;
-  color: #353241;
+  /* font-size: 15px; */
+  /* line-height: 20px; */
+  /* color: #353241; */
 }
+#testimonial .testimonial-carousel .user a,
+#testimonial .testimonial-carousel .user a:active,
+#testimonial .testimonial-carousel .user a:focus,
+#testimonial .testimonial-carousel .user a:active {
+  text-decoration: underline dotted white;
+  color: white;
+}
+
 #testimonial .testimonial-carousel .user p span {
   display: block;
   color: #353241;
@@ -470,7 +482,6 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header .block {
   color: #FFFFFF;
   margin: 0 auto;
-  padding-left: 90px;
   text-align: center;
 }
 #global-header .block h1 {
